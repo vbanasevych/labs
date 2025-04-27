@@ -190,7 +190,7 @@ def generate_gaussian_files(atoms, coordinates, torsion_atoms, atoms_to_rotate):
             coordinates[torsion_atoms[2]] - coordinates[torsion_atoms[1]],
             angle
         )
-        file_name = os.path.join(output_dir, f"molecule_{angle}.gjf")
+        file_name = os.path.join(output_dir, f"mol_{angle}.gjf")
         with open(file_name, 'w') as file:
             # file.write(f"{len(atoms)}\n\n")
             file.write("# hf/3-21+G Opt=ModRedundant output=wfn\n\n")
