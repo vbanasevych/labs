@@ -58,6 +58,7 @@ def process_all_files():
 
             for result in ehb_results:
                 ehb_file.write(result + '\n')
+    print("Файл створено.")
 
 
 # Запуск

@@ -180,7 +180,7 @@ def rotate_coordinates(coords, atoms_to_rotate, point, axis, angle):
 
 def generate_gaussian_files(atoms, coordinates, torsion_atoms, atoms_to_rotate):
     """Генерація вихідних файлів для обертання на різні кути."""
-    output_dir = "gaussian_files"
+    output_dir = "gaussian_files2"
     os.makedirs(output_dir, exist_ok=True)
 
     for angle in range(0, 360):
